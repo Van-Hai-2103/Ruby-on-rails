@@ -1,7 +1,8 @@
 source "https://rubygems.org"
 
 
-gem 'pg', '>= 0.18', '< 2.0'
+
+gem 'pg', '1.5.3'
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 8.0.1"
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
