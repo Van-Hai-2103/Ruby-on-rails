@@ -22,17 +22,21 @@
   </head>
   <body>
     <div class="notice"><%= notice %></div>
-    <nav>
-  <%= link_to "Home", root_path %>
-</nav>
-<main>
-  <%= yield %>
-</main>
+
+    <nav> 
+      <%= link_to "Home", root_path %>
+      <% if authenticated? %> 
+        <%= button_to "Log out", session_path, method: :delete, class: "nav-button" %>
+      <% else %> 
+        <%= link_to "Log In", new_session_path, class: "nav-link" %>
+      <% end %> 
+    </nav>
+    <main>
+      <%= yield %>
+    </main>
 
   </body>
 </html>
-
-
 
 <style>
 nav {
@@ -40,7 +44,8 @@ nav {
   margin-top: 20px;
 }
 
-nav a {
+nav a,
+nav button {
   display: inline-block;
   text-decoration: none;
   color: white;
@@ -48,9 +53,12 @@ nav a {
   padding: 10px 20px;
   border-radius: 5px;
   transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border: none;
+  cursor: pointer;
 }
 
-nav a:hover {
+nav a:hover,
+nav button:hover {
   background-color: #0056b3;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }

@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
-  # Remove the line below if no authentication is required
-  # include Authentication
+  #Remove the line below if no authentication is required
+  include Authentication
 
   allow_browser versions: :modern
   around_action :switch_locale
