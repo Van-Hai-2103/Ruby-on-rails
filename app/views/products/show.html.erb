@@ -10,12 +10,12 @@
         <p class="product-description"><%= @product.description %></p>
       <% end %>
       <%= render "inventory", product: @product %>
-      <% if authenticated? %>
-        <div class="product-actions">
-          <%= link_to "Edit", edit_product_path(@product), class: "btn edit-btn" %>
-          <%= button_to "Delete", @product, method: :delete, data: { turbo_confirm: "Are you sure?" }, class: "btn delete-btn" %>
-        </div>
-      <% end %>
+      # <% if authenticated? %>
+      #   <div class="product-actions">
+      #     <%= link_to "Edit", edit_product_path(@product), class: "btn edit-btn" %>
+      #     <%= button_to "Delete", @product, method: :delete, data: { turbo_confirm: "Are you sure?" }, class: "btn delete-btn" %>
+      #   </div>
+      # <% end %>
     </section>
   </section>
   <%= link_to "Cancel", products_path, class: "cancel-link" %>
