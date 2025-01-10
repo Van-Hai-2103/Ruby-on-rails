@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get "registrations/new"
+  get "registrations/create"
   resource :session
   resources :passwords, param: :token
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
@@ -16,6 +18,16 @@ Rails.application.routes.draw do
 
 
 
+
+  get 'signup', to: 'registrations#new', as: 'signup' 
+  post 'signup', to: 'registrations#create'
+
+
+
+
+
+
+  
   resources :products do
     resources :subscribers, only: [ :create ]
   end
