@@ -439,10 +439,6 @@ trix-editor .attachment__metadata {
 }
 
 
-
-
-
-
 body {
   font-family: Arial, Helvetica, sans-serif;
   padding: 1rem;
@@ -482,73 +478,6 @@ section.product img {
   flex-basis: 50%;
   max-width: 50%;
 }
-
-
-
-
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    margin: 0;
-    padding: 0;
-  }
-
-  .custom-form {
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 30px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
-  }
-
-  .form-group {
-    margin-bottom: 20px;
-  }
-
-  .form-group label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-
-  .custom-input,
-  .custom-textarea,
-  .custom-file,
-  .custom-number {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    transition: border-color 0.3s;
-  }
-
-  .custom-input:focus,
-  .custom-textarea:focus,
-  .custom-file:focus,
-  .custom-number:focus {
-    border-color: #007bff;
-  }
-
-  .custom-submit {
-    background-color: #007bff;
-    border-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    transition: background-color 0.3s, border-color 0.3s;
-  }
-
-  .custom-submit:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
-  }
-
-
 
   body {
     font-family: 'Roboto', sans-serif;
@@ -631,89 +560,6 @@ section.product img {
     color: #0056b3;
     text-decoration: underline;
   }
-
-
-  .back-link {
-    margin-bottom: 20px;
-    display: block;
-    text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
-  }
-
-  .back-link:hover {
-    text-decoration: underline;
-  }
-
-  .product {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
-  }
-
-  .product-image img {
-    max-width: 100%;
-    border-radius: 10px;
-    display: block;
-    margin: 0 auto 20px auto;
-  }
-
-  .product-info {
-    margin-top: 20px;
-  }
-
-  .product-title {
-    font-size: 2em;
-    margin-bottom: 10px;
-    color: #333333;
-    text-align: center;
-  }
-
-  .product-description {
-    font-size: 1.2em;
-    color: #666666;
-    text-align: justify;
-  }
-
-  .product-actions {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-
-  .product-actions .btn {
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    color: white;
-    transition: background-color 0.3s, border-color 0.3s;
-  }
-
-  .edit-btn {
-    background-color: #ffc107;
-    border: 1px solid #ffc107;
-  }
-
-  .edit-btn:hover {
-    background-color: #e0a800;
-    border-color: #e0a800;
-  }
-
-  .delete-btn {
-    background-color: #dc3545;
-    border: 1px solid #dc3545;
-  }
-
-  .delete-btn:hover {
-    background-color: #c82333;
-    border-color: #c82333;
-  }
-
 
 
   /* Định dạng form new.html.erb*/
@@ -811,3 +657,230 @@ section.product img {
   color: #0056b3;
   text-decoration: underline;
 }
+
+
+/*trang thêm và sữa của _form.html/css */
+body {
+  background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+.custom-form {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 45px;
+  background: linear-gradient(135deg, #ffffff, #f0f4f8);
+  border-radius: 25px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+  font-family: 'Arial', sans-serif;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.custom-form:hover {
+  transform: scale(1.03);
+  box-shadow: 0 25px 35px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+  margin-bottom: 35px;
+}
+
+.form-group label {
+  font-weight: 700;
+  margin-bottom: 12px;
+  display: block;
+  color: #2c3e50;
+}
+
+.custom-input, .custom-textarea, .custom-file, .custom-number {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  font-size: 17px;
+  background-color: rgba(255, 255, 255, 0.98);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.4s, box-shadow 0.4s, transform 0.3s;
+}
+
+.custom-input:focus, .custom-textarea:focus, .custom-file:focus, .custom-number:focus {
+  border-color: #e74c3c;
+  box-shadow: 0 0 12px rgba(231, 76, 60, 0.25);
+  transform: scale(1.02);
+}
+
+.custom-submit {
+  padding: 18px 35px;
+  font-size: 22px;
+  font-weight: 800;
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 10px 15px rgba(231, 76, 60, 0.3);
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.custom-submit:hover {
+  background-color: #c0392b;
+  box-shadow: 0 15px 25px rgba(192, 57, 43, 0.5);
+  transform: scale(1.05);
+}
+
+.custom-submit:active {
+  transform: scale(0.98);
+}
+
+/* trang sản phẩm */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --background-color: #f8f9fa;
+  --accent-color: #ffc107;
+  --text-color: #343a40;
+  --muted-text-color: #6c757d;
+}
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Arial', sans-serif;
+}
+
+.custom-form-container {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  background: linear-gradient(135deg, var(--background-color), #e8e8e8);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.custom-form-container:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.custom-form-container .back-link {
+  margin-bottom: 10px;
+  display: block;
+  font-size: 14px;
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+.custom-form-container .back-link a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.custom-form-container .back-link a:hover {
+  color: var(--secondary-color);
+}
+
+.custom-form-container .product {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.custom-form-container .product-image img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-form-container .product-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.custom-form-container .product-info {
+  flex: 1;
+  opacity: 0;
+  animation: fadeIn 1.2s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+
+.custom-form-container .product-title {
+  font-size: 24px;
+  margin: 0 0 10px;
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+.custom-form-container .product-title:hover {
+  color: var(--primary-color);
+}
+
+.custom-form-container .product-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: var(--muted-text-color);
+}
+
+.custom-form-container .product-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.custom-form-container .btn {
+  padding: 10px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.custom-form-container .btn.edit-btn {
+  background-color: var(--primary-color);
+}
+
+.custom-form-container .btn.edit-btn:hover {
+  background-color: #0056b3;
+}
+
+.custom-form-container .btn.delete-btn {
+  background-color: #dc3545;
+}
+
+.custom-form-container .btn.delete-btn:hover {
+  background-color: #b21f2d;
+}
+
+.custom-form-container .btn:active {
+  transform: scale(0.98);
+}
+
+.custom-form-container .cancel-link {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.custom-form-container .cancel-link:hover {
+  color: var(--secondary-color);
+}
+
+
+
+
+
+
+
